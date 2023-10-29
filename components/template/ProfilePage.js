@@ -36,7 +36,7 @@ function ProfilePage() {
         });
         const data = await res.json();
         console.log(data);
-        router.replace("/profile")
+        if(data.status === "success") router.reload()
     }
 
     return (

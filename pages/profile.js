@@ -1,14 +1,15 @@
-import HomePage from "components/template/HomePage";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]";
 
-export default function Home() {
+const { default: ProfilePage } = require("components/template/ProfilePage");
 
+function profile() {
   return (
-    <HomePage/>
+    <ProfilePage />
   )
 }
 
+export default profile
 
 export async function getServerSideProps(context){
   const session = await getServerSession(context.req , context.res , authOptions);

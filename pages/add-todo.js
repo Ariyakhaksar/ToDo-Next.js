@@ -1,14 +1,14 @@
-import HomePage from "components/template/HomePage";
+import AddTodoPage from "components/template/AddTodoPage"
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]";
 
-export default function Home() {
-
+function AddTodo() {
   return (
-    <HomePage/>
+    <AddTodoPage />
   )
 }
 
+export default AddTodo
 
 export async function getServerSideProps(context){
   const session = await getServerSession(context.req , context.res , authOptions);

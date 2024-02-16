@@ -331,7 +331,7 @@ button {
 .signin-form {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  width: 500px;
   align-items: center;
   margin: auto;
   margin-top: 100px;
@@ -351,7 +351,7 @@ button {
 }
 
 .signin-form div {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: flex;
   color: #7f7e86;
 }

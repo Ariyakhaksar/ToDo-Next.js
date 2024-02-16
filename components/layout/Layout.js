@@ -40,6 +40,7 @@ function Layout({children}) {
                 </ul>
             </aside>
             <section>
+               
                 {children}             
             </section>
         </div>

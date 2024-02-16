@@ -30,7 +30,7 @@ export default async function handler(req , res){
         user.name = name;
         user.family = family;
         user.save();
-        return res.status(201).json({ status: "status", data: {name , family , email : session.user.email }})
+        return res.status(201).json({ status: "success", data: {name , family , email : session.user.email }})
     }else if(req.method === "GET"){
         res.status(200).json({status : "success" , data : {Name : user.name  , Family : user.family , Email : user.email}})
     }

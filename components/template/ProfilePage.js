@@ -35,8 +35,9 @@ function ProfilePage() {
             headers : {'Content-Type': 'application/json'}
         });
         const data = await res.json();
-        console.log(data);
-        if(data.status === "success") router.reload()
+        if(data.status === "success") {
+            router.reload();
+        }
     }
 
     return (

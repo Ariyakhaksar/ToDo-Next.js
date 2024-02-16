@@ -19,7 +19,7 @@ function SignupPage() {
   const clickHandler = async (e) => {
     e.preventDefault();
     if (formData.email.length < 1 || formData.password.length < 1) {
-      toast.error("لطفا اطلاعات معتبر وارد کنید");
+      toast.error("Please enter valid information");
 
       return;
     }

@@ -19,8 +19,7 @@ function SigninPage() {
   const clickHandler = async () => {
     const { email, password } = formData;
     if (formData.email.length < 1  || formData.password.length < 1) {
-      toast.error("لطفا اطلاعات معتبر وارد کنید");
-
+        toast.error("Please enter valid information");
       return;
     } else {
       const res = await signIn("credentials", { email, password, redirect: false });

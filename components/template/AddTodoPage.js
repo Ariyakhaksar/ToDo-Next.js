@@ -5,8 +5,7 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 import { MdDoneAll } from "react-icons/md";
 import { useState } from "react";
 import RadioButton from "components/elemnet/RadioButton";
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 function AddTodoPage() {
 
@@ -66,7 +65,6 @@ function AddTodoPage() {
             <button onClick={addHandler}>Add</button>
 
         </div>
-        <ToastContainer />
     </div>
   )
 }
